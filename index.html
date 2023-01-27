@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="form_container">
+                <p class="form_label">Person's Name</p>
+                <div class="name__container">
+                    <input type="text" id="first_name" placeholder="First">
+                    <input type="text" id="last_name" placeholder="Last">
+                </div>
+                <p class="form_label">Contact Number</p>
+                <input type="number" id="phone_no">
+                <button class="save_btn" onclick=addTask()>Save</button>
+        </div>
+    </div>
+    <div class="search_container">
+        <input type="text" class="search_bar" placeholder="Search here.." oninput='searchEmployee()'>
+    </div>
+    <div class="table__container">
+        <table id="employees_table">
+            <thead>
+                <tr>
+                  <th>Sr. No</th>
+                  <th>Name</th>
+                  <th>Contact No</th>
+                  <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="customers">
+            </tbody>
+          </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
